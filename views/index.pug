@@ -1,0 +1,285 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  // Always include this line of code
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='../css/style.css')
+  link(rel='stylesheet' href='../css/general.css')
+  script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+  script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+  title DockVille  Smart Car Parking Lot
+header.header
+  // nav-open
+  a(href='#')
+    img.logo(alt='dockVille logo' src='../img/yes.webp')
+  nav.main-nav
+    ul.main-nav-list
+      li
+        a.main-nav-link(href='#how') How it works
+      li
+        a.main-nav-link(href='#services') Services
+      li
+        a.main-nav-link(href='#pricing') Pricing
+      li
+        a.main-nav-link(href='#contact us') Contact us
+      li
+        a.main-nav-link.nav-cta(href='../html/Sign-up.html') Get Started
+  button.btn-mobile-nav
+    ion-icon.icon-mobile-nav(name='menu-outline')
+    ion-icon.icon-mobile-nav(name='close-outline')
+main
+  section.section-hero
+    .hero
+      .hero-textbox
+        h1.heading-primary
+          | A hustle free smart parking lot open every single day for you.
+        p.hero-description
+          | The smart monthly parking services that will make sure your motors
+          | are secure,clean and so much more. Tailored to your personal tastes
+          | and needs.
+        a.btn.btn--full.margin-right-sm(href='#services') Services you need
+        a.btn.btn--outline(href='#how') Learn more &darr;
+      .hero-imgbox
+        img.hero-img(src='../img/car parking.jpg' alt='cars in the parking area')
+      .delivered-meals
+        .delivered-imgs
+          img(src='../img/customer/nairobi.jpg')
+          img(src='../img/customer/john.jpg')
+          img(src='../img/customer/penina.jpg')
+          img(src='../img/customer/rena.jpg')
+          img(src='../img/customer/joseph.jpg')
+          img(src='../img/customers/customer-6.jpg')
+        p.delivered-text
+          | some of  our
+          span  100+
+          | customers as of july 2023!
+section#how.section-how
+  .container
+    span.sub-heading How it works
+    h2.heading-secondary The working three steps
+  .container.grid.grid--2-cols.grid--center-v
+    // STEP-01
+    .step-text-box
+      p.step-number 01 
+      h3.heading-tertiary  Tell us what  service you  would want to have:
+      p.step-description
+        | Never again waste time thinking about what service to have!
+        | DockVille app makes available all the services at your convienience
+    .step-img-box
+      img.step-img(src='../img/app/services2.PNG' alt='')
+    // STEP-02
+    .step-img-box
+      img.step-img(src='../img/app/app-screen-2.png' alt='')
+    .step-text-box
+      p.step-number 02 
+      h3.heading-tertiary  Approve your weekly meal plan:
+      p.step-description
+        | Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.
+    // STEP-03
+    .step-text-box
+      p.step-number 03 
+      h3.heading-tertiary Receive meals at convenient time: 
+      p.step-description
+        | Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
+    .step-img-box
+      img.step-img(src='../img/app/app-screen-3.png' alt='iphone app delivery screen')
+section.section-meals
+  .container.center-text
+    span#services.sub-heading Services
+    h2.heading-secondary
+      | All your services in one place.
+  .container.grid.grid--3-cols.margin-bottom-md
+    a(href='car parking unit.html')
+      .meal
+        img.meal-img(src='../img/car.jpg' alt='')
+        .meal-content
+          .meal-tag
+            span.tag.Tag--vegan Car Parking Unit
+    a(href='car tire services.html')
+      .meal
+        img.meal-img(src='../img/car tire clinic.jpg' alt='')
+        .meal-content
+          .meal-tag
+            span.tag.Tag--vegan Car tire services 
+    a(href='car tire services.html')
+      .meal
+        img.meal-img(src='../img/battery-services.jpg' alt='')
+        .meal-content
+          .meal-tag
+            span.tag.Tag--vegan Battery Services
+section#pricing.section-pricing
+  .container
+    span.sub-heading Pricing
+    h2.heading-secondary
+      | Enjoy the services without breaking the bank
+  .container.grid.grid--2-cols.margin-bottom-md
+    .pricing-plan.pricing-plan--starter
+      header.plan-header
+        p.plan-name car services and battery
+        p.plan-price
+          span Ug
+          | shs
+        p.plan-text  per service 
+      ul.list
+        li.list-item
+          ion-icon.list-icon(name='checkmark-outline')
+          span Car tyre sizes,make
+        li.list-item
+          ion-icon.list-icon(name='checkmark-outline')
+          span Tire puncture,fixing
+        li.list-item
+          ion-icon.list-icon(name='checkmark-outline')
+          span Batteries fee hire
+        li.list-item
+          ion-icon.list-icon(name='close-outline')
+          span
+      .plan-sign-up
+        a.btn.btn--full(href='#') Price per service
+    .pricing-plan.pricing-plan--complete
+      header.plan-header
+        p.plan-name Car Parking Unit
+        p.plan-price
+          span Ug
+          | shs
+        p.plan-text per time of day
+      ul.list
+        li.list-item
+          ion-icon.list-icon(name='checkmark-outline')
+          span
+            strong
+            |  Day
+        li.list-item
+          ion-icon.list-icon(name='checkmark-outline')
+          span
+            | Night 
+            strong  
+        li.list-item
+          ion-icon.list-icon(name='checkmark-outline')
+          span Park for less than 3hours
+        li.list-item
+          ion-icon.list-icon(name='checkmark-outline')
+          span  Always register your car
+      .plan-sign-up
+        a.btn.btn--full(href='#') price per day time
+  .container.grid
+    aside.plan-details
+      | Prices include all applicable taxes.
+      | You can cancel at any time.
+  .container.grid.grid--4-cols
+    .feature
+      ion-icon.feature-icon(name='sunny')
+      // <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+      p.feature-title Day time
+      p.feature-text
+        | Each car is charged UGX 3000 during day, apart from the Bodabodas UGX 2000 and Coasters UGX 4000.
+    .feature
+      ion-icon.feature-icon(name='moon')
+      // <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+      p.feature-title Night time 
+      p.feature-text  Each car is charged UGX 2000 a night apart from trucks UGX 5000
+    .feature
+      ion-icon.feature-icon(name='code')
+      // <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+      p.feature-title Not less than 3hours
+      p.feature-text  All our partners only use reusable containers to package all your meals..
+    .feature
+      ion-icon.feature-icon(name='battery-dead')
+      // <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+      p.feature-title Tire and Battery:
+      p.feature-text
+        | Tires,prices are determined by tire prices, carmodel,make etc besides,tire pressure UGX 500, puncture fixing is UGX 5000, valves 5000 also Batteries are hired out at afee
+section.section-cta
+  .container
+    .cta
+      .cta-text-box
+        h2.heading-secondary Enjoy your first service for free!
+        p.cta-text
+          | From car-parking,to car tire services such as puncture fixing, tire pressure and so much more.
+        form.cta-form(action='#')
+          div
+            label(for='Full-name') Full Name
+            input#Full-name(type='text' placeholder='James Milner' required='')
+          div
+            label(for='email') E-mail address
+            input#email(type='email' placeholder='me@example.com' required='')
+          div
+            label(for='select-where') Where did you hear from us?
+            select#select-where(required='')
+              option(value='') please choose one: 
+              option(value='friends')  Friends and Family
+              option(value='youtube')  youtube video 
+              option(value='youtube')  Podcast 
+              option(value='youtube')  Face book ad 
+              option(value='youtube')  Others 
+          button.btn.btn--form Book now
+          //
+            <input type="checkbox">
+            <input type="number">
+      .cta-img-box(role='img' aria-label='A man booking now')
+footer.footer(id='contact us')
+  .container.grid.grid--footer
+    .logo-col
+      a.footer-logo(href='#')
+        img.logo(alt='DockVille logo' src='../img/yes.webp')
+      .social-s
+        ul.social-links
+          li
+            a.footer-link(href='#')
+              ion-icon.social-icon(name='logo-instagram')
+        ul.social-links
+          li
+            a.footer-link(href='#')
+              ion-icon.social-icon(name='logo-facebook')
+        ul.social-links
+          li
+            a.footer-link(href='#')
+              ion-icon.social-icon(name='logo-twitter')
+      p.copyright Copyright &copy; 2023 by DockVille Car Parking Services,Inc.All rights reserved
+    .address--col
+      p.footer-heading Contact us
+      address.address
+        p.contacts
+          | Kyanja St., along ntinda-kyanja road,kampala Nakawa.
+        p
+          a.footer-link(href=' tel 415-201-6370') 415-201-6370
+          br
+          a.footer-link(href='mailto:hello@DockVille.com')  Kyanja@DockVille.com
+    nav.nav--col
+      p.footer-heading Account
+      ul.footer-nav
+        li
+          a.footer-link(href='#') Create account
+        li
+          a.footer-link(href='#') Sign in
+        li
+          a.footer-link(href='#') iOS app
+        li
+          a.footer-link(href='#') Android app
+    nav.nav--col
+      p.footer-heading Account
+      ul.footer-nav
+        li
+          a.footer-link(href='#') About DockVille Smart Parking lot
+        li
+          a.footer-link(href='#') Our partners
+        li
+          a.footer-link(href='#') For Business
+        li
+          a.footer-link(href='#') Careers
+    nav.nav--col
+      p.footer-heading Company
+      ul.footer-nav
+        li
+          a.footer-link(href='#') Directory
+        li
+          a.footer-link(href='#') Help center
+        li
+          a.footer-link(href='#') Privacy &amp; terms
+  script.
+    !function(){var e,t,n,a;window.MyAliceWebChat||((t=document.createElement("div")).id="myAliceWebChat",(n=document.createElement("script")).type="text/javascript",n.async=!0,n.src="https://myalice-widget.netlify.app/index.js",(a=(e=document.body.getElementsByTagName("script"))[e.length-1]).parentNode.insertBefore(n,a),a.parentNode.insertBefore(t,a),n.addEventListener("load",(function(){MyAliceWebChat.init({selector:"myAliceWebChat",number:"256788163843",message:"Hi, welcome to paw packaging.",color:"#25D366",channel:"wa",boxShadow:"none",text:"Paw Packaging",theme:"light",position:"right",mb:"20px",mx:"20px",radius:"20px"})})))}();

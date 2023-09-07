@@ -1,0 +1,78 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/form.css')
+  title Car registration form
+section.section-cta
+  .container
+    .cta
+      .cta-text-box
+        p.heading-secondary  Fill in the details of the service
+        form#formsignup.cta-form(name='signupform' action='#' onsubmit='return Validate(event);' method='POST')
+          // action=# takes data to the backend
+
+          div
+            label(for='time') Date
+            input#time(type='date' name='time' placeholder='')
+            span#timeError.organize
+          div
+            label(for='fullname') Driver Name 
+            input#fullname(type='text' name='fullname' placeholder='James  Milner')
+            span#FnameError.organize
+          div
+            label(for='Nplate') Number Plate
+            input#numberplate(type='text' name='Nplate' placeholder='')
+            span#Nplate-Error.organize
+          div
+            label(for='color') Color
+            input#carcolor(type='text' name='carColor' placeholder='')
+            span#carColorError.organize
+          div
+            label(for='arrivalTime') Arrival Time
+            input#arrivalTime(type='time' name='arrivaltime' placeholder='')
+            span#arrivalTimeError.organize
+          .col-md-4
+            label.form-label(for='truck') Car Model
+            select#truck.form-select
+              option(selected='') Choose what to park.
+              option Truck
+              option Personal Car
+              option Taxis
+              option Coasters
+              option Boda bodas
+            span#truckError.organize
+          
+          div
+            label(for='phonenumber') Phone Number
+            input#phonenumber(name='phone' type='tel' placeholder='+256')
+            span#phoneError.organize
+          div
+            label(for='niN-error') NIN
+            input#niN-error(type='nin' name='nin' placeholder='')
+            span#nin-error.organize
+          .col-md-4
+            label.form-label(for='gender') Gender
+            select#role.form-select(type='text' name='gender')
+              option(selected='') Select Gender.
+              option(value='male') Male
+              option(value='female') Female
+            span#roleError.organize
+          div
+            label(for='exitTime') Exit Time
+            input#exitTimeError(type='time' name='exitTime' placeholder='')
+            span#exitTimeError.organize   
+
+          div
+            label(for='receipt') ReceiptNumber
+            input#exitTimeError(type='receipt' name='receipt' placeholder='')
+            span#exitTimeError.organize
+          div
+            label(for='revenue') Revenue
+            input#exitTimeError(type='text' name='revenue' placeholder='')
+            span#exitTimeError.organize
+
+          button.btn.btn--form(type='submit') Submit
+//- script(src='../js/form.js')
+script(src='../js/truck.js')

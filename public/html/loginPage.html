@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Login</title>
+  </head>
+  <section class="section-login">
+  <header>
+    <h1 class="heading-login">Enter your details</h1>
+  </header>
+  <body>
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+           
+            <form class="cta-form" action="#" name="signupform" onsubmit="return Validate(event);"
+            method="POST">
+              <!-- <div>
+                <label for="Full-name">Full Name</label>
+                <input
+                  id="Full-name"
+                  type="text"
+                  name="fullName"
+              placeholder=""/>
+              <span id="FnameError"class="organize"></span>
+            </div> -->
+             
+
+              <div>
+                <label for="email">E-mail </label>
+                <input id="email" type="text" name="email" placeholder="XXX@mail.com" name="email"/>
+                <span id="emailError"class="organize"></span>
+              </div>
+             
+              <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="text" placeholder="" />
+                <span id="password-error"class="organize"></span>
+              </div>
+            
+              <button  type="submit" class="btn btn--form">Login</button>
+             
+            </form>
+       <!-- <p class="btn btn--form"> Don't have an account?
+        <a href="#">Sign Up</a>
+      </p> -->
+
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- <script src="./DockvilleProject/js/login.js"></script> -->
+    <!-- <script src="login.js"></script> -->
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>

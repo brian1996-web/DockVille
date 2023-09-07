@@ -1,0 +1,29 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css')
+  | Document
+form.row.g-3(name="signupform" method="POST" action="/api/signup/edit?id="+signup._id)
+  .col-md-6
+    label.form-label(for='firstname') First name
+    input#firstname.form-control(type='text' name='firstname' value=signup.firstname)
+  .col-md-6
+    label.form-label(for='lastname') Last name
+    input#lastname.form-control(type='text' name='lastname' value=signup.lastname)
+  .col-12
+    label.form-label(for='email') Email
+    input#email.form-control(type='email' name='email' value=signup.email)
+  .col-md-6
+    label.form-label(for='phone') PhoneNumber
+    input#phone.form-control(type='telephone' name='phone' value=signup.phone)
+  .col-md-6
+    label.form-label(for='gender') Gender
+    input#phone.form-control(type='gender' name='gender' value=signup.gender)
+  .col-md-6
+    label.form-label(for='mypassword') Enter password
+    input#mypassword.form-control(type='password' name='mypassword' value=signup.mypassword)
+  //- .col-md-6
+  //-   label.form-label(for='confirmpassword') Confirm password
+  //-   input#confirmpassword.form-control(type='password' name='confirmpassword' value=signup.password)
+  .col-12
+    button.btn.btn-primary(type='submit') Sign in

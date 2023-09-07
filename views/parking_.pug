@@ -1,0 +1,75 @@
+
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css')
+  link(rel='stylesheet' href='../css/style.css')
+
+
+h1  You most welcome Manager  
+//- p you are logged in as: #{User}
+
+head
+  meta(charset='UTF-8')
+  title Parking Dashboard
+  link(rel='stylesheet' href='../css/dash.css')
+  // Boxicons CDN Link
+  link(href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+.sidebar
+  .logo-details
+    a(href='#')
+      img.logo(alt='dockVille logo' src='../img/yes.webp')
+    
+    //- i.bx.bxl-c-plus-plus
+    span.logo_name DOCKVILLE
+  ul.nav-links
+    li
+      a.active(href='')
+        i.bx.bx-grid-alt
+        span.links_name Parking Dashboard
+    li
+      a(href='http://localhost:4000/api/list')
+        i.bx.bx-box
+        span.links_name Trucks
+    li
+      a(href='http://localhost:4000/api/list')
+        i.bx.bx-list-ul
+        span.links_name Personal cars
+    li
+      a(href='http://localhost:4000/api/list')
+        i.bx.bx-pie-chart-alt-2
+        span.links_name Taxis
+    li
+      a(href='http://localhost:4000/api/list')
+        i.bx.bx-coin-stack
+        span.links_name Coasters
+    li
+      a(href='http://localhost:4000/api/list')
+        i.bx.bx-book-alt
+        span.links_name Boda bodas
+
+
+      //- a.main-nav-link.nav-cta(href='#') Add motor.
+      a.main-nav-link.nav-cta(href='/api/logout') logout  
+
+section.home-section
+  nav
+    .sidebar-button
+      i.bx.bx-menu.sidebarBtn
+      span.dashboard Dashboard
+    .search-box
+      input(type='text' placeholder='Search...')
+      i.bx.bx-search
+    .profile-details
+      img(src='../img/brian.jpg' alt='')
+      span.admin_name Brian K
+      i.bx.bx-chevron-down
+
+      //- .motor
+      a.main-nav-link.nav-cta(href='http://localhost:4000/api/truckform') Add motor.
+
+
+
+  
+  

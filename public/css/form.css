@@ -1,0 +1,151 @@
+/* sign up page */
+.cta .heading-secondary {
+  color: #45260a;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.cta-text-box {
+  color: #45260a;
+  padding: 15px 64px 64px 64px;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 16px;
+  /* display: flex;
+  direction: column; */
+}
+
+ .cta-form label {
+  display: block;
+  /* font-size: 10px; */
+  font-weight: 400;
+  /* margin-bottom: 8px; */
+} /* login page */
+
+.heading-login {
+  margin-left: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 75%;
+  padding: 12px;
+  font-size: 16px;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1rem;
+} 
+
+/* form */
+.cta {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  /* background-color: #fdf2e9; */
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  /* temporary height */
+
+  background-image: linear-gradient(#fdf2e9, #eb984e);
+  /* #eb984e */
+  /* #e67e22 */
+  /* height: 50rem; */
+  /* background-color: #fdf2e9; */
+}
+.cta-text-box {
+  color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+/* .cta-img-box {
+  background-image: linear-gradient(
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/parking-lot.jpg");
+
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 11px;
+} */
+/* buttons */
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  /* padding: 1rem; */
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 1.2rem;
+  /* color: #fff; */
+  /* only necessary for btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 500;
+  /* put transition on the original state */
+
+  /* transition: background-color 0.3s; */
+  transition: background-color all 0.3s;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  text-decoration: none;
+  font-size: 2rem;
+  /* padding: 1.6rem 3.2rem; */
+  border-radius: 9px;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+
+  /* border: 3px solid white; */
+  /* To add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.organize{
+  display: inline-block;
+
+}

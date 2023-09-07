@@ -1,0 +1,94 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/signup.css')
+  title Create an Account
+.section-cta
+  .container
+    .cta
+      .cta-text-box
+        p.heading-secondary Enter the details
+        //
+          <p class="cta-text">
+          login below if you have an account.
+          </p>
+        // <a href="loginPage.html" class="btn btn--outline">Login &darr; </a>
+        form#formsignup.cta-form(name='signupform' action='/api/regtruck' onsubmit='return Validate(event);' method='POST')
+          // action=# takes data to the backend
+          div
+            div
+              label(for='username') Driver Name 
+              input#username(type='text' name='username' placeholder='James ')
+              span#UsernameError.organize
+            div
+              label(for='date') Date
+              input#date(type='date' name='date' placeholder='date')
+              span#dateError.organize
+            div
+              label(for='nin') NIN
+              input#nin(type='text' placeholder='' name='nin')
+              span#ninError.organize
+            div
+              label(for='receipt') Receipt Number
+              input#receipt(type='text' placeholder='' name='receipt')
+              span#receiptError.organize
+            div
+              label(for='email') Email
+              input#email(type='email' placeholder='' name='email')
+              span#emailError.organize
+            div
+              label(for='phone') Phone Number
+              input#phone(type='phone' placeholder='' name='phone')
+              span#phoneError.organize
+            div
+              label(for='arrivalTime') Arrival Time
+              input#arrivalTime(type='time' placeholder='' name='arrivalTime')
+              span#arrivalTimeError.organize
+          div
+            div
+              label(for='Nplate') Number plate
+              input#Nplate(type='text' placeholder='' name='Nplate')
+              span#NplateError.organize
+            div
+              label(for='color') Color
+              input#color(type='text' placeholder='' name='color')
+              span#colorError.organize
+            div
+              label(for='model') Car Model
+              select#model(name='model')
+                option(value='') Select Model 
+                option(value='Truck')  Truck
+                option(value='Taxis')  Taxis
+                option(value='Personal car')  Personal Car 
+                option(value='Coasters')  Coasters
+                option(value='Boda bodas')  Boda bodas 
+              span#modelError.organize
+              
+            div
+              label(for='gender') Gender
+              select#gender(name='gender')
+                option(value='') Select gender 
+                option(value='Male')  Male
+                option(value='Female')   Female 
+              span#genderError.organize
+            div
+              label(for='exitTime') Exit Time
+              input#exitTime(type='time' placeholder='' name='exitTime')
+              span#exitTimeError.organize
+            div
+              label(for='revenue') Revenue
+              input#revenue(type='text' placeholder='' name='revenue')
+              span#revenueError.organize
+            div
+              label(for='password') Password
+              input#password(name='password' type='text' placeholder='')
+              span#passwordError.organize
+
+          button.btn.btn--form(type='submit') Sign up
+          // <a href="loginPage.html" class="btn btn--outline">Login &darr; </a>
+          // &darr;
+      .cta-img-box(role='img' aria-label='Woman enjoying food')
+  // <script src="."></script>
+  script(src='../js/details.js')

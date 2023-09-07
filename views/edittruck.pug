@@ -1,0 +1,94 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css')
+  //- link(rel='stylesheet' href='../css/truck.css')
+  link(rel='stylesheet' href='../css/signup.css')
+  //- link (rel="stylesheet" href="../css/signup.css")
+
+
+  | what would you like to edit.
+form.row.g-3(name="truckform" method="POST" action="/api/truck/edit?id="+truck._id )
+         
+          div
+            div
+              label(for='username') Driver Name 
+              input#username(type='text' name='username' placeholder='James' value=truck.username )
+              span#UsernameError.organize
+            div
+              label(for='date') Date
+              input#date(type='date' name='date' placeholder='date' value=truck.date)
+              span#dateError.organize
+            div
+              label(for='nin') NIN
+              input#nin(type='text' placeholder='' name='nin' value=truck.nin)
+              span#ninError.organize
+            div
+              label(for='receipt') Receipt Number
+              input#receipt(type='text' placeholder='' name='receipt' value=truck.receipt)
+              span#receiptError.organize
+            div
+              label(for='email') Email
+              input#email(type='email' placeholder='' name='email' value=truck.email)
+              span#emailError.organize
+            div
+              label(for='phone') Phone Number
+              input#phone(type='phone' placeholder='' name='phone' value=truck.phone)
+              span#phoneError.organize
+            div
+              label(for='arrivalTime') Arrival Time
+              input#arrivalTime(type='time' placeholder='' name='arrivalTime' value=truck.arrivalTime)
+              span#arrivalTimeError.organize
+          div  
+            div
+              label(for='Nplate') Number plate
+              input#Nplate(type='text' placeholder='' name='Nplate' value=truck.Nplate)
+              span#NplateError.organize
+            div
+              label(for='color') Color
+              input#color(type='text' placeholder='' name='color' value=truck.color)
+              span#colorError.organize
+            div
+              label(for='model') Car Model
+              select#model(name='model' value=truck.model)
+                option(value='') Select Model 
+                option(value='Truck')  Truck
+                option(value='Taxis')  Taxis
+                option(value='Personal car')  Personal Car 
+                option(value='Coasters')  Coasters
+                option(value='Boda bodas')  Boda bodas 
+                option(value='youtube')  Others 
+              span#modelError.organize
+            div
+              label(for='gender') Gender
+              select#gender(name='gender' value=truck.gender)
+                option(value='') Select gender 
+                option(value='male')  Male
+                option(value='remale')   Female 
+              span#genderError.organize
+            div
+              label(for='exitTime') Exit Time
+              input#exitTime(type='time' placeholder='' name='exitTime' value=truck.exitTime)
+              span#exitTimeError.organize
+            div
+              label(for='revenue') Revenue
+              input#revenue(type='text' placeholder='' name='revenue' value=truck.revenue)
+              span#revenueError.organize
+            div
+              label(for='password') Password
+              input#password(name='password' type='text' placeholder='' value=truck.revenue)
+              span#passwordError.organize
+
+
+          button.btn.btn--form(type='submit') Sign up
+          //- a.btn.btn--outline(href='loginPage.html') Login &darr; 
+          // &darr;
+          .cta-img-box(role='img' aria-label='Woman enjoying food')
+
+
+script(src='../js/registervalidation.js')
+
+
+
+          
+

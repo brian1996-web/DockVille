@@ -1,0 +1,29 @@
+doctype html
+head
+  link(rel='stylesheet' href='/css/bootstrap.css')
+  link(rel='stylesheet' href='/css/receipt.css')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css')
+  title Booking Form
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+.receipt
+  p.head Dockville day and night parking
+  h1 A receipt
+  p Driver Name: #{truck.username}   
+  p Date: #{truck.date}
+  p NIN: #{truck.nin}
+  p Receipt: #{truck.receipt}
+  p Email: #{truck.email}
+  p Phone Number: #{truck.phone}
+  p Arrival Time: #{truck.arrivalTime}
+  p Number Plate: #{truck.Nplate}
+  p Model: #{truck.model}
+  p Gender: #{truck.gender}
+  p Exit Time: #{truck.exitTime}
+  p Revenue: #{truck.revenue}
+  p 
+  footer.footer
+    .footer-content
+      p &copy; Brian K. All rights reserved.
+      ul.footer-links

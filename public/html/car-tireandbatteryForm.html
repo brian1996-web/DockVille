@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/form.css" />
+
+    <title>Car registration form</title>
+  </head>
+  <body>
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <p class="heading-secondary"> Fill in the details of the service</p>
+
+            
+            <form
+            class="cta-form"
+            name="signupform"
+              action="#"
+              id="formsignup"
+              onsubmit="return Validate(event);"
+              method="POST"
+            >
+              <!-- action=# takes data to the backend -->
+
+              
+              
+              <div>
+                <label for="fullname">Driver Name </label>
+                <input
+                  id="fullname"
+                  type="text"
+                  name="fullname"
+                  placeholder="James  Milner"
+                />
+              <span id="FnameError" class="organize"></span>
+                
+              </div>
+            
+          
+          
+              <div>
+                <label for="numberplate">Number Plate</label>
+                <input
+                  id="numberplate"
+                  type="text"
+                  name="Nplate"
+                  placeholder=""
+                />
+                <span id="Nplate-Error"class="organize"></span>
+              </div>
+            
+
+              <div>
+                <label for="color">Color</label>
+
+                <input
+                  id="carcolor"
+                  type="text"
+                  name="carColor"
+                  placeholder=""
+                />
+                <span id="carColorError"class="organize"></span>
+              </div>
+    
+  
+  
+  
+              <div>
+                <label for="arrivalTime">Arrival Time</label>
+                <input
+                  id="arrivalTime"
+                  type="time"
+                  name="arrivaltime"
+                  placeholder=""
+                />
+                <span id="arrivalTimeError"class="organize"></span>
+              </div>
+         
+    
+            
+              <div class="col-md-4">
+                <label for="truck" class="form-label">Car Model</label>
+                <select id="truck" class="form-select">
+                  <option selected>Choose what to park.</option>
+                  <option>Truck</option>
+                  <option>Personal Car</option>
+                  <option>Taxis</option>
+                  <option>Coasters</option>
+                  <option>Boda bodas</option>
+                </select>
+                <span id="truckError"class="organize"></span>
+              </div>
+
+              <div>
+              <label for="time">Date</label>
+
+              <input
+                id="time"
+                type="date"
+                name="time"
+                placeholder=""
+              />
+              <span id="timeError"class="organize"></span>
+            </div>
+
+              <div>
+              <label for="phonenumber">Phone Number</label>
+              <input
+                id="phonenumber"
+                name="phone"
+                type="tel"
+                placeholder="+256"
+              />
+              <span id="phoneError"class="organize"></span>
+            </div>
+               
+               <div class="col-md-4">
+                <label for="role"  class="form-label">Role</label>
+                <select id="role" type="text" name="role" class="form-select">
+                  <option selected>Select Role.</option>
+                  <option>Users</option>
+                  <option>Directors</option>
+                  <option>Manager</option>
+                  <option>Salesagent</option>
+                </select>
+                <span id="roleError" class="organize"></span>
+              </div>
+              
+             <div>
+              <label for="niN-error">NIN</label>
+              <input id="niN-error" type="nin" name="nin" placeholder="" />
+              <span id="nin-error"class="organize"></span>
+          </div>
+        
+           <button class="btn btn--form" type="submit">Submit</button>
+        </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="./DockvilleProject/js/form.js"></script>  -->
+    <script src="../js/form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  // Always include this line of code
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='../css/style.css')
+  link(rel='stylesheet' href='../css/general.css')
+  script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+  script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+  title DockVille  Smart Car Parking Lot
+header.header
+  // nav-open
+  a(href='#')
+    img.logo(alt='dockVille logo' src='../img/yes.webp')
+  nav.main-nav
+    ul.main-nav-list
+      //- a.main-nav-link.nav-cta(href='http://localhost:4000')
+      //-  <li><a href="#how" class="main-nav-link">How it works</a></li>
+      li
+        a.main-nav-link(href='http://localhost:4000/api/howitworks') How it works
+      
+      li
+        a.main-nav-link.nav-cta(href='http://localhost:4000/api/sections ') Get Started
+  button.btn-mobile-nav
+    ion-icon.icon-mobile-nav(name='menu-outline')
+    ion-icon.icon-mobile-nav(name='close-outline')
+main
+  section.section-hero
+    .hero
+      .hero-textbox
+        h1.heading-primary
+          | A hustle free smart parking lot open every single day.
+        p.hero-description
+          | The smart monthly parking services that will make sure  motors
+          | are secure,clean and so much more. Tailored to  personal tastes
+          | and needs.
+       
+      .hero-imgbox
+        img.hero-img(src='../img/car parking.jpg' alt='cars in the parking area')
+      .delivered-meals
+        .delivered-imgs
+          img(src='../img/customer/nairobi.jpg')
+          img(src='../img/customer/john.jpg')
+          img(src='../img/customer/penina.jpg')
+          img(src='../img/customer/rena.jpg')
+          img(src='../img/customer/joseph.jpg')
+          img(src='../img/customers/customer-6.jpg')
+        p.delivered-text
+          | some of  our
+          span  5+
+          | users as of September 2023!

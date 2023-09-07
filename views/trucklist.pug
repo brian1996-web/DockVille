@@ -1,0 +1,72 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+.container
+  .row.mb-3
+    .col-md-6.offset-md-3
+      form(action='/api/truck/search' method='POST')
+        .input-group
+          input.form-control(type='text' name='search' placeholder='Search...')
+          button.btn.btn-primary.search(type='submit') Search
+h1 Check out the data
+ 
+.container-fluid
+        .col-md-12
+          div
+        .col
+              table.table.table-striped.table-responsive
+                thead.bg-secondary
+                  tr
+                    th Username
+                    th Date
+                    th NIN
+                    th Receipt Number
+                    th Email
+                    th Phone Number
+                    th Arrival Time
+                    th Number plate
+                    th Color
+                    th Car Model
+                    th Gender
+                    th Exit Time
+                    th Revenue
+                    th Password
+                    th Receipt
+                    th Delete
+                    th Edit
+                tbody
+
+                  if trucks.length
+                      each truck in trucks 
+                        tr      
+                          td #{truck.username}
+                          td #{truck.date}
+                          td #{truck.nin}
+                          td #{truck.receipt}
+                          td #{truck.email}
+                          td #{truck.phone}
+                          td #{truck.arrivalTime}
+                          td #{truck.Nplate}
+                          td #{truck.color}
+                          td #{truck.model}
+                          td #{truck.gender}
+                          td #{truck.exitTime}
+                          td #{truck.revenue}
+                          td #{truck.password}
+                          td
+                              a.btn.btn-warning(href="/api/truck/receipt/"+truck._id) Print
+                          td 
+                              form(action="/api/truck/delete" method="POST")
+                                  input(type="hidden" name="id" value=truck._id)
+                                  button.btn.btn-danger(type="submit") Delete
+                          td
+                              a.btn.btn-warning(href="/api/truck/edit/"+truck._id) Edit
+                              
+                              //- a(href=`/api/truck/edit${truck._id}`) Edit
+                  else 
+                    p there are no motors in the database
+                
+

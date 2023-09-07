@@ -1,0 +1,109 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/signup.css')
+  title Create an Account
+//- section.section-cta
+//-   .container
+//-     .cta
+//-       .cta-text-box
+//-         p.heading-secondary Join Now
+      
+//-         form#formsignup.cta-form(name='signupform' method='POST' action='/api/regsignup' onsubmit='return Validate(event);')
+//-           // action=# takes data to the backend
+//-           div
+//-             div
+//-               label(for='firstname') First Name 
+//-               input#firstname(type='text' name='firstname' placeholder='James ')
+//-               span#FnameError.organize
+//-             div
+//-               label(for='lastname') Last Name
+//-               input#Lastname(type='text' name='lastname' placeholder=' Milner')
+//-               span#LnameError.organize
+//-             div
+//-               label(for='email') E-mail
+//-               input#email(type='text' name='email' placeholder='XXX@mail.com')
+//-               span#emailError.organize
+//-             div
+//-               label(for='phonenumber') Phone Number
+//-               input#phonenumber(name='phone' type='telphone' placeholder='+256')
+//-               span#phoneError.organize
+
+//-               //- div
+//-             //-   label(for='confirm') Confirm-Password
+//-             //-   input#confirm(type='password' placeholder='@Brian1998' name='confirmPassword')
+//-             //-   span#confirmPassword-error.organize
+
+//-             div 
+//-               label(for='gender') Gender
+//-               input#gender(type="text", name="gender", placeholder="")
+//-               span#genderError.organize
+         
+//-           div
+//-             div
+//-               label(for='password') Enter Password
+//-               input#password(type='password' name='mypassword' placeholder='@Brian1998')
+//-               span#password-error.organize
+//-             //- div
+//-             //-   label(for='confirm') Confirm-Password
+//-             //-   input#confirm(type='password' placeholder='@Brian1998' name='confirmPassword')
+//-             //-   span#confirmPassword-error.organize
+//-           button.btn.btn--form(type='submit') Sign up
+//-           //- a.btn.btn--outline(href='loginPage.html') Login &darr; 
+//-           // &darr;
+//-       .cta-img-box(role='img' aria-label='Woman enjoying food')
+
+
+//- script(src='../js/registervalidation.js')
+section.section-cta
+  .container
+    .cta
+      .cta-text-box
+        p.heading-secondary Join Now
+        //
+          <p class="cta-text">
+          login below if you have an account.
+          </p>
+        // <a href="loginPage.html" class="btn btn--outline">Login &darr; </a>
+        form#formsignup.cta-form(name='signupform' action='#' onsubmit='return Validate(event);' method='POST')
+          // action=# takes data to the backend
+          div
+            div
+              label(for='First-name') First Name 
+              input#firstname(type='text' name='firstname' placeholder='James ')
+              span#FnameError.organize
+            div
+              label(for='Last-name') Last Name
+              input#Lastname(type='text' name='lastname' placeholder=' Milner')
+              span#LnameError.organize
+            div
+              label(for='email') E-mail
+              input#email(type='text' name='email' placeholder='XXX@mail.com')
+              span#emailError.organize
+            div
+              label(for='phonenumber') Phone Number
+              input#phonenumber(name='phone' type='tel' placeholder='+256')
+              span#phoneError.organize
+          //
+            <div>
+            <label for="carmodel">Gender</label>
+            <input id="gender" type="gender" name="gender" placeholder="" />
+            <span id="genderError"></span>
+            </div>
+          div
+            div
+              label(for='password') Enter Password
+              input#password(type='password' name='my password' placeholder='@Brian1998')
+              span#password-error.organize
+            div
+              label(for='confirm') Confirm-Password
+              input#confirm(type='password' placeholder='@Brian1998' name='confirmPassword')
+              span#confirmPassword-error.organize
+          button.btn.btn--form(type='submit') Sign up
+          a.btn.btn--outline(href='loginPage.html') Login &darr; 
+          // &darr;
+      .cta-img-box(role='img' aria-label='Woman enjoying food')
+// <script src="."></script>
+script(src='../js/registervalidation.js')

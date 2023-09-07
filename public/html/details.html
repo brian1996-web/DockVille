@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/signup.css" />
+    <title>Create an Account</title>
+  </head>
+  <body>
+    <div class="section-cta">
+     
+      <div class="container">
+        <div class="cta">
+            <div class="cta-text-box">
+
+            <p class="heading-secondary">Enter the details</p>
+            <!-- <p class="cta-text">
+             login below if you have an account.
+            </p> -->
+            <!-- <a href="loginPage.html" class="btn btn--outline">Login &darr; </a>  -->
+            
+            <form
+              class="cta-form"
+              name="signupform"
+              action="#"
+              id="formsignup"
+              onsubmit="return Validate(event);"
+              method="POST"
+            > 
+                <!-- action=# takes data to the backend -->
+    <div>
+              <div>
+                <label for="username">Driver Name </label>
+                <input
+                  id="username"
+                  type="text"
+                  name="username"
+                  placeholder="James "
+                />
+                <span id="UsernameError" class="organize"></span>
+              </div>
+
+              <div>
+                <label for="date">Date</label>
+                <input
+                  id="date"
+                  type="date"
+                  name="date"
+                  placeholder="date"
+                />
+                <span id="dateError"class="organize"></span>
+              </div>
+
+              
+
+              <div>
+                <label for="nin">NIN</label>
+                <input
+                  id="nin"
+                  type="text"
+                  placeholder=""
+                  name="nin"
+                />
+                <span id="ninError"class="organize"></span>
+              </div>
+
+              <div>
+                <label for="receipt">Receipt Number</label>
+                <input
+                  id="receipt"
+                  type="text"
+                  placeholder=""
+                  name="receipt"
+                />
+                <span id="receiptError"class="organize"></span>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder=""
+                  name="email"
+                />
+                <span id="emailError"class="organize"></span>
+              </div>
+              <div>
+                <label for="phone">Phone Number</label>
+                <input
+                  id="phone"
+                  type="phone"
+                  placeholder=""
+                  name="phone"
+                />
+                <span id="phoneError"class="organize"></span>
+              </div>
+
+            </div> 
+            
+            <div>
+
+               <div>
+                <label for="arrivalTime">Arrival Time</label>
+                <input
+                  id="arrivalTime"
+                  type="time"
+                  placeholder=""
+                  name="arrivalTime"
+                />
+                <span id="arrivalTimeError"class="organize"></span>
+              </div>
+
+               <div>
+                <label for="Nplate">Number plate</label>
+                <input
+                  id="Nplate"
+                  type="text"
+                  placeholder=""
+                  name="Nplate"
+                />
+                <span id="NplateError"class="organize"></span>
+              </div>
+              
+              <div>
+                <label for="color">Color</label>
+                <input
+                  id="color"
+                  type="text"
+                  placeholder=""
+                  name="color"
+                />
+                <span id="colorError"class="organize"></span>
+              </div>
+
+              <div>
+                <label for="model">Car Model</label>
+                <select id="model" name="model">
+                  <option value="">Select Model </option value="">
+                  <option value="truck"> Trucks</option> 
+                  <option value="Personal Car"> Personal Car </option>
+                  <option value="Coasters"> Coasters</option>
+                  <option value="Boda bodas"> Boda bodas </option>
+                </select>
+                <span id="modelError"class="organize"></span>
+              </div>
+
+              <div>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                  <option value="">Select gender </option value="">
+                  <option value="Male"> Male</option> 
+                  <option value="Female">Female </option>
+                  </select>
+                <span id="genderError"class="organize"></span>
+              </div>
+            
+                <div>
+                 <label for="exitTime">Exit Time</label>
+                <input
+                  id="exitTime"
+                  type="time"
+                  placeholder=""
+                  name="exitTime"
+                />
+                <span id="exitTimeError"class="organize"></span>
+              </div>
+            
+              <div>
+                <label for="revenue">Revenue</label>
+                <input
+                  id="revenue"
+                  type="text"
+                  placeholder=""
+                  name="revenue"
+                />
+                <span id="revenueError"class="organize"></span>
+              </div> 
+              
+              <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="text" placeholder="" />
+                <span id="passwordError"class="organize"></span>
+              </div>
+
+            </div>   
+             
+            <button class="btn btn--form" type="submit">Sign up</button>
+
+              
+      <!-- <a href="loginPage.html" class="btn btn--outline">Login &darr; </a>  -->
+      <!-- &darr; -->
+       
+        
+            </form>
+          </div>
+          <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+
+        </div>
+      </div>
+    
+
+    </section>
+
+    <!-- <script src="."></script> -->
+
+    <script src="../js/details.js"></script>
+  </body>
+</html>
